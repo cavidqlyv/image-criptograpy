@@ -21,6 +21,13 @@
 
 This project aims to encript the image file with noise image.
 
+❗ Output files will be binary (White and Black)
+
+<img alt="Napoleon" src="images\napoleon.png" height="150">
+
+<img alt="Napoleon" src="images\ProgramScreenShoot.png" height="320">
+
+
 ## ✅ Requirements ##
 
 Before starting 🏁, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) installed.
@@ -44,6 +51,7 @@ $ pip install numpy
 # Run the project
 $ python3 imgCriptograpy.py
 ```
+
 
 Made with ❤️ by <a href="https://github.com/cavidqlyv" target="_blank">Javid Guliyev</a>
 
