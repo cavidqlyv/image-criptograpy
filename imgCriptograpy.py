@@ -77,8 +77,12 @@ def stackImages(imgArray,scale,lables=[]):
     return ver
 
 def main():
-    img = cv2.imread(sys.path[0]+'/images/napoleon.png')
-    
+
+    imgpath = sys.path[0]+'/images/napoleon.png'
+    img = cv2.imread(imgpath)
+    # get filename from path
+    filename = imgpath.split('/')[-1].split('.')[0]
+
     img_bin = img_to_binary(img)
     noise= get_noise(img_bin)
     img_cript = do_criptography(img_bin, noise)
@@ -115,10 +119,10 @@ def main():
 
 
     # save images
-    # cv2.imwrite('C:/Users/cvdql/Desktop/MUZ/napoleon_bin.png', img_bin)
-    # cv2.imwrite('C:/Users/cvdql/Desktop/MUZ/napoleon_noise.png', noise)
-    # cv2.imwrite('C:/Users/cvdql/Desktop/MUZ/napoleon_cript.png', img_cript)
-    # cv2.imwrite('C:/Users/cvdql/Desktop/MUZ/napoleon_decript.png', img_decript)
+    cv2.imwrite(sys.path[0]+'/out/'+filename+'_bin.png', img_bin)
+    cv2.imwrite(sys.path[0]+'/out/'+filename+'_noise.png', noise)
+    cv2.imwrite(sys.path[0]+'/out/'+filename+'_encripted.png', img_cript)
+    cv2.imwrite(sys.path[0]+'/out/'+filename+'_decript.png', img_decript)
 
 if __name__ == '__main__':
     main()
