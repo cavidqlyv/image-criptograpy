@@ -77,11 +77,11 @@ def stackImages(imgArray,scale,lables=[]):
     return ver
 
 def main():
-
-    imgpath = sys.path[0]+'/images/napoleon.png'
-    img = cv2.imread(imgpath)
+    imgpath = '/images/napoleon.png'
+    fullimgpath = sys.path[0]+imgpath
+    img = cv2.imread(fullimgpath)
     # get filename from path
-    filename = imgpath.split('/')[-1].split('.')[0]
+    filename = fullimgpath.split('/')[-1].split('.')[0]
 
     img_bin = img_to_binary(img)
     noise= get_noise(img_bin)
