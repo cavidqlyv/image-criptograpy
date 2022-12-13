@@ -53,7 +53,7 @@ $ python3 imgCriptograpy.py
 ```
 
 
-Made with ❤️ by <a href="https://github.com/cavidqlyv" target="_blank">Javid Guliyev</a>
+Made with 🪚 by <a href="https://github.com/cavidqlyv" target="_blank">Javid Guliyev</a>
 
 <hr>
 
